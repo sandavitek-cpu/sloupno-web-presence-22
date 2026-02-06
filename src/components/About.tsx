@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import { Shield, Heart, Users, Award } from "lucide-react";
+import { Shield, Heart, Users, TreePine } from "lucide-react";
 
 const features = [
   {
     icon: Shield,
-    title: "Ochrana",
-    description: "Zajišťujeme požární ochranu obce a okolí. Jsme připraveni zasáhnout kdykoli je potřeba.",
+    title: "Ochrana obce",
+    description: "Zajišťujeme požární ochranu Sloupna a okolních vesnic. Jsme připraveni zasáhnout kdykoli je potřeba.",
   },
   {
     icon: Heart,
     title: "Dobrovolnictví",
-    description: "Naši členové věnují svůj volný čas službě komunitě — bez nároku na odměnu.",
+    description: "Naši členové věnují volný čas službě komunitě — z lásky k obci a sousedům.",
   },
   {
     icon: Users,
-    title: "Komunita",
-    description: "Pořádáme společenské a sportovní akce, které spojují obyvatele Sloupna.",
+    title: "Sousedská pospolitost",
+    description: "Pořádáme hasičské plesy, posvícení a setkání, která spojují celou vesnici.",
   },
   {
-    icon: Award,
-    title: "Tradice",
-    description: "Navazujeme na dlouholetou tradici dobrovolného hasičství v naší obci.",
+    icon: TreePine,
+    title: "Tradice venkova",
+    description: "Navazujeme na odkaz našich předků a udržujeme hasičskou tradici v naší obci.",
   },
 ];
 
@@ -40,7 +40,7 @@ const itemVariants = {
 
 const About = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-gradient-section">
+    <section id="about" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,9 +57,9 @@ const About = () => {
           </h2>
           <div className="w-16 h-1 bg-primary mx-auto rounded-full mb-8" />
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-            Sbor dobrovolných hasičů Sloupno je nedílnou součástí obce. Naším
-            posláním je chránit životy a majetek spoluobčanů, pečovat o hasičskou
-            techniku a šířit povědomí o požární prevenci.
+            Sbor dobrovolných hasičů Sloupno je srdcem naší vesnice. Kromě ochrany životů 
+            a majetku se věnujeme hasičským závodům, práci s dětmi a mládeží 
+            a organizujeme společenské akce, které spojují celou komunitu.
           </p>
         </motion.div>
 
@@ -74,9 +74,9 @@ const About = () => {
             <motion.div
               key={feature.title}
               variants={itemVariants}
-              className="bg-card border border-border rounded-lg p-8 text-center hover:border-primary/40 transition-colors duration-500 shadow-card group"
+              className="bg-card border border-border rounded-lg p-8 text-center hover:border-primary/40 transition-all duration-500 shadow-card hover:shadow-warm group"
             >
-              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-500">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors duration-500">
                 <feature.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-display text-xl font-semibold uppercase tracking-wide text-foreground mb-3">

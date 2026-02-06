@@ -26,7 +26,7 @@ const contactItems = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 md:py-32 bg-gradient-section">
+    <section id="contact" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,8 +43,8 @@ const Contact = () => {
           </h2>
           <div className="w-16 h-1 bg-primary mx-auto rounded-full mb-8" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Máte zájem o členství, spolupráci nebo se chcete na něco zeptat?
-            Neváhejte nás kontaktovat.
+            Máte zájem o členství, chcete přihlásit dítě k mladým hasičům 
+            nebo se chcete na něco zeptat? Neváhejte se ozvat!
           </p>
         </motion.div>
 
@@ -56,9 +56,9 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="text-center p-8 rounded-lg border border-border bg-card shadow-card hover:border-primary/40 transition-all duration-500 group"
+              className="text-center p-8 rounded-lg border border-border bg-card shadow-card hover:shadow-warm hover:border-primary/40 transition-all duration-500 group"
             >
-              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-500">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors duration-500">
                 <item.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-base font-semibold uppercase tracking-wider text-foreground mb-3">

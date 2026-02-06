@@ -25,16 +25,16 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <p className="font-display text-sm md:text-base uppercase tracking-[0.3em] text-primary mb-4">
+          <p className="font-display text-sm md:text-base uppercase tracking-[0.3em] text-accent mb-4">
             Sbor dobrovolných hasičů
           </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-wider text-foreground mb-6">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-wider text-primary-foreground mb-6">
             SDH Sloupno
           </h1>
-          <div className="w-24 h-1 bg-primary mx-auto mb-8 rounded-full" />
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Chráníme životy, majetek a přírodu. Jsme tu pro vás již desítky let
-            — jako sousedé, přátelé a dobrovolníci.
+          <div className="w-24 h-1 bg-accent mx-auto mb-8 rounded-full" />
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">
+            Chráníme životy, závodíme s vášní a vychováváme budoucí generace hasičů.
+            Jsme srdce naší vesnice.
           </p>
         </motion.div>
 
@@ -43,7 +43,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="mt-16 inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300 group"
+          className="mt-16 inline-flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors duration-300 group"
           aria-label="Scroll down"
         >
           <span className="font-display text-xs uppercase tracking-[0.2em]">Zjistit více</span>

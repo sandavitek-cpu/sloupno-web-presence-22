@@ -1,31 +1,24 @@
 import { motion } from "framer-motion";
-import { Flame, Truck, Droplets, Siren } from "lucide-react";
+import { Flame, Truck, Droplets, Users } from "lucide-react";
 
 const stats = [
   { icon: Flame, value: "50+", label: "Let tradice" },
   { icon: Truck, value: "3", label: "Vozidla" },
-  { icon: Droplets, value: "25+", label: "Aktivních členů" },
-  { icon: Siren, value: "100+", label: "Zásahů ročně" },
+  { icon: Users, value: "25+", label: "Aktivních členů" },
+  { icon: Droplets, value: "15+", label: "Mladých hasičů" },
 ];
 
 const roles = [
   { name: "Velitel jednotky", description: "Řídí zásahovou činnost a výcvik jednotky" },
   { name: "Strojník", description: "Odpovídá za techniku a její provozuschopnost" },
-  { name: "Preventista", description: "Zabezpečuje požární prevenci v obci" },
-  { name: "Mladí hasiči", description: "Výchova nové generace dobrovolných hasičů" },
+  { name: "Vedoucí mládeže", description: "Vede a vzdělává mladé hasiče a přípravku" },
+  { name: "Závodní družstvo", description: "Reprezentuje sbor na hasičských soutěžích" },
 ];
 
 const Team = () => {
   return (
-    <section id="team" className="py-24 md:py-32 relative overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-background" />
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(var(--foreground)) 1px, transparent 0)",
-        backgroundSize: "40px 40px"
-      }} />
-
-      <div className="relative container mx-auto px-4">
+    <section id="team" className="py-24 md:py-32 bg-gradient-section-alt">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +66,7 @@ const Team = () => {
           className="text-center mb-12"
         >
           <h3 className="font-display text-2xl md:text-3xl font-bold uppercase text-foreground mb-2">
-            Složení jednotky
+            Složení sboru
           </h3>
         </motion.div>
 
@@ -85,7 +78,7 @@ const Team = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex items-start gap-4 p-5 rounded-lg border border-border bg-card/50 hover:border-primary/30 transition-colors duration-300"
+              className="flex items-start gap-4 p-5 rounded-lg border border-border bg-card hover:border-primary/30 transition-all duration-300 shadow-card"
             >
               <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
               <div>
